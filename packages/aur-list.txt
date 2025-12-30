@@ -1,0 +1,25 @@
+# AUR Package List for CatchyOS Workspace
+# Packages from Arch User Repository
+
+# Code Editors
+cursor-bin
+
+# API Tools
+postman-bin
+
+# Design Tools
+figma-linux
+
+# Android Development
+android-studio
+
+# Flutter Development
+flutter
+
+# Database GUI Clients
+dbeaver-ce
+# tableplus (alternative, uncomment if preferred)
+
+# Additional AUR packages can be added here
+# Format: package-name
+

@@ -1,0 +1,119 @@
+# Starship Prompt Configuration
+# A minimal, fast, and customizable prompt for any shell
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Format: All format strings are wrapped in '' to allow for escaping
+format = """
+[╭─](bold blue)$os\
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$package\
+$golang\
+$java\
+$nodejs\
+$php\
+$python\
+$rust\
+$terraform\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+[╰─](bold blue)$character"""
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Directory module configuration
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = "at [$path]($style) "
+style = "bold cyan"
+
+# Git branch configuration
+[git_branch]
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+symbol = " "
+style = "bold purple"
+
+# Git status configuration
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "bold red"
+conflicted = "🏳 "
+up_to_date = "✓"
+untracked = "🤷"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+
+# Node.js configuration
+[nodejs]
+format = "via [$symbol($version )]($style)"
+symbol = " "
+style = "bold green"
+
+# Python configuration
+[python]
+format = "via [$symbol$pyenv_prefix($version )(\($virtualenv\) )]($style)"
+symbol = " "
+style = "yellow bold"
+
+# Docker context
+[docker_context]
+format = "via [$symbol$context]($style) "
+symbol = "🐳 "
+style = "blue bold"
+
+# Command duration
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration]($style) "
+style = "bold yellow"
+
+# Time
+[time]
+format = "at [$time]($style) "
+style = "bold white"
+use_12hr = false
+
+# Username
+[username]
+format = "[$user]($style) "
+style_user = "bold yellow"
+style_root = "bold red"
+show_always = false
+
+# Hostname
+[hostname]
+format = "@[$hostname]($style) "
+style = "bold green"
+

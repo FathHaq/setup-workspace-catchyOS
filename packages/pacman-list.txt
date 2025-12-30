@@ -1,0 +1,58 @@
+# Pacman Package List for CatchyOS Workspace
+# Native Arch Linux packages
+
+# Essential tools
+git
+base-devel
+
+# Shell
+zsh
+
+# Containerization
+docker
+docker-compose
+
+# Development tools
+vim
+neovim
+curl
+wget
+tree
+htop
+neofetch
+
+# Version control
+git-lfs
+
+# Network tools
+openssh
+nmap
+wireshark-cli
+
+# Build tools
+cmake
+make
+gcc
+clang
+
+# Utilities
+unzip
+zip
+tar
+rsync
+
+# PHP Extensions for Laravel (via pacman)
+php
+php-gd
+php-intl
+php-xml
+php-bcmath
+php-mbstring
+php-curl
+php-zip
+php-sqlite
+php-pgsql
+php-mysql
+php-redis
+php-imagick
+

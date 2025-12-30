@@ -1,0 +1,16 @@
+# Git Repository List
+# Add your repositories here, one per line
+# Supports multiple formats:
+#   - Full URL: https://github.com/user/repo.git
+#   - SSH: git@github.com:user/repo.git
+#   - Short: user/repo (will use https://github.com/user/repo.git)
+#
+# Lines starting with # are comments and will be ignored
+#
+# Example:
+# https://github.com/username/project1.git
+# git@github.com:username/project2.git
+# username/project3
+
+# Add your repositories below:
+

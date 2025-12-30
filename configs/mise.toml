@@ -1,0 +1,46 @@
+# Mise (formerly rtx) Configuration
+# Version manager for multiple languages and tools
+
+# Node.js versions
+[tools]
+node = "lts"
+npm = "latest"
+yarn = "latest"
+pnpm = "latest"
+
+# Go versions
+go = "latest"
+air = "latest"
+golangci-lint = "latest"
+
+# PHP versions
+# Note: PHP extensions are installed via pacman for better compatibility
+# php = "latest"  # Commented out, using pacman version instead
+composer = "latest"
+
+# Java versions
+java = "lts"
+
+# Python versions
+python = "latest"
+pip = "latest"
+
+# Rust
+rust = "latest"
+cargo = "latest"
+
+# Flutter
+flutter = "latest"
+
+# Additional tools
+docker = "latest"
+terraform = "latest"
+kubectl = "latest"
+
+# Global settings
+[settings]
+verbose = false
+always_keep_download = false
+always_keep_install = false
+legacy_version_file = true
+
